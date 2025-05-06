@@ -36,9 +36,9 @@ const Post = ({ post }) => {
 			// refetch posts
 			toast.success("Post deleted successfully");
 			// Invalidate the query to refetch posts
-			queryClient.invalidateQueries({queryKey: ["posts"]})
+			queryClient.invalidateQueries({queryKey: ["posts"]});
 		},
-	})
+	});
 
 	const postOwner = post.user;
 	const isLiked = false;
