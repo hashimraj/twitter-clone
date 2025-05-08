@@ -38,7 +38,7 @@ const LoginPage = () => {
 			}
 		},
 		onSuccess: () => {
-			//refetch the authUser query to get the latest user data
+			//refetch the authUser query to get the latest user data. yap yap
 			queryClient.invalidateQueries({queryKey: ["authUser"]});
 		}
 	})
