@@ -1,14 +1,11 @@
 {
   "name": "twitter-clone",
-  "homepage": "https://hashimraj.github.io/twitter-clone/",
   "version": "1.0.0",
   "main": "backend/server.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d frontend/dist"
+    "dev": "NODE_ENV=development nodemon backend/server.js",
+		"start": "set NODE_ENV=production && node backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
