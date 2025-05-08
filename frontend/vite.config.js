@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base:"/twitter-clone",
   server: {
     port:3000,
     proxy: {
